@@ -1,0 +1,87 @@
+import { C } from "@/constants/designTokens";
+
+export const Footer = () => (
+  <footer
+    style={{
+      background: C.bg2,
+      borderTop: `1px solid ${C.border}`,
+      padding: "28px 24px",
+    }}
+  >
+    <div
+      style={{
+        maxWidth: 1100,
+        margin: "0 auto",
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "center",
+        justifyContent: "space-between",
+        gap: 20,
+      }}
+    >
+      {/* Logo */}
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <div
+          style={{
+            width: 28,
+            height: 28,
+            borderRadius: 7,
+            background: C.coral,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <span
+            style={{
+              color: "#fff",
+              fontWeight: 900,
+              fontSize: "0.85rem",
+              fontFamily: "Syne, sans-serif",
+            }}
+          >
+            G
+          </span>
+        </div>
+        <span
+          style={{
+            color: C.textPrimary,
+            fontWeight: 800,
+            fontFamily: "Syne, sans-serif",
+            letterSpacing: "0.05em",
+            fontSize: "0.95rem",
+          }}
+        >
+          GLANCEIT
+        </span>
+      </div>
+
+      {/* Links */}
+      <div style={{ display: "flex", gap: 28, flexWrap: "wrap" }}>
+        {["Features", "Pricing", "About", "Contact", "Privacy", "Terms"].map(
+          (l) => (
+            <a
+              key={l}
+              href="#"
+              style={{
+                color: C.textMuted,
+                textDecoration: "none",
+                fontSize: "0.83rem",
+                transition: "color 0.2s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = C.coral)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = C.textMuted)}
+            >
+              {l}
+            </a>
+          ),
+        )}
+      </div>
+
+      {/* Copyright */}
+      <p style={{ color: C.textMuted, fontSize: "0.8rem", margin: 0 }}>
+        © 2026 GlanceIt
+      </p>
+    </div>
+  </footer>
+);
