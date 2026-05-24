@@ -96,4 +96,7 @@ export default defineConfig({
       clientFiles: ['./src/app/**/*', './src/app/root.tsx', './src/app/routes.ts'],
     },
   },
+  build: {
+    target: 'esnext'
+  }
 });
