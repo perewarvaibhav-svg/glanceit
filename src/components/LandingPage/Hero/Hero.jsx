@@ -13,7 +13,7 @@ export const Hero = () => (
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      padding: "140px 24px 0",
+      padding: "120px 20px 0",
       position: "relative",
       overflow: "hidden",
     }}
@@ -73,6 +73,7 @@ export const Hero = () => (
       </span>
 
       <h1
+        className="hero-title"
         style={{
           fontFamily: "Syne, sans-serif",
           fontSize: "clamp(3rem, 7vw, 6.5rem)",
@@ -102,14 +103,14 @@ export const Hero = () => (
       </p>
 
       <div
+        className="mobile-stack"
         style={{
           display: "flex",
           gap: 14,
           justifyContent: "center",
-          flexWrap: "wrap",
         }}
       >
-        <PrimaryBtn>
+        <PrimaryBtn style={{ width: "auto" }}>
           Get Started Free{" "}
           <ArrowRight
             size={15}
@@ -120,7 +121,7 @@ export const Hero = () => (
             }}
           />
         </PrimaryBtn>
-        <GhostBtn>Watch Demo</GhostBtn>
+        <GhostBtn style={{ width: "auto" }}>Watch Demo</GhostBtn>
       </div>
     </div>
 

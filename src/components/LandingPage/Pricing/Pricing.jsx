@@ -2,6 +2,8 @@ import { CheckCircle2, Minus } from "lucide-react";
 import { C } from "@/constants/designTokens";
 import { PrimaryBtn } from "../PrimaryBtn";
 import { GhostBtn } from "../GhostBtn";
+import { PricingCard } from "./PricingCard";
+import { tiers } from "./pricingData";
 
 const rows = [
   { feature: "Users", pro: "Up to 10", ent: "Unlimited", custom: "Unlimited" },
@@ -22,7 +24,7 @@ export const Pricing = () => (
   <section
     style={{
       background: C.bg1,
-      padding: "100px 24px",
+      padding: "80px 20px",
       borderTop: `1px solid ${C.border}`,
     }}
   >
@@ -98,8 +100,18 @@ export const Pricing = () => (
         </span>
       </div>
 
-      {/* Table */}
+      {/* Mobile-only stack of Pricing Cards */}
+      <div className="mobile-show" style={{ marginBottom: 40 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+          {tiers.map((t, idx) => (
+            <PricingCard key={idx} tier={t} />
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop-only comparison table */}
       <div
+        className="mobile-hide"
         style={{
           background: C.surface,
           borderRadius: 20,

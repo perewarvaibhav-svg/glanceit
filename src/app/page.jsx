@@ -65,19 +65,58 @@ export default function LandingPage() {
         <FooterCTA />
       </main>
       <Footer />
-
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #FAF8F4; }
         html { scroll-behavior: smooth; }
+        
+        /* Mobile vs Desktop Display Utilities */
         @media (max-width: 768px) {
           .footer-grid { grid-template-columns: 1fr 1fr !important; }
           .testimonial-grid { grid-template-columns: 1fr !important; }
+          .mobile-hide { display: none !important; }
+          .mobile-show { display: block !important; }
+          .mobile-flex { display: flex !important; }
+          .mobile-stack { flex-direction: column !important; }
+          
+          /* Hero mobile overrides */
+          .hero-title {
+            line-height: 1.15 !important;
+            font-size: 2.8rem !important;
+          }
+          
+          /* Metric Cards responsive overlay */
+          .metric-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            bottom: 12px !important;
+            left: 12px !important;
+            right: 12px !important;
+            gap: 8px !important;
+          }
+          .metric-card {
+            padding: 8px 10px !important;
+          }
         }
+        
         @media (max-width: 480px) {
           .footer-grid { grid-template-columns: 1fr !important; }
+          .metric-grid {
+            grid-template-columns: 1fr !important;
+            position: relative !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            margin-top: 16px !important;
+            padding: 0 16px 16px !important;
+          }
         }
+        
+        @media (min-width: 769px) {
+          .mobile-show { display: none !important; }
+          .desktop-grid { display: grid !important; }
+        }
+        
         .md\\:flex-row { flex-direction: row !important; }
         .md\\:flex-row-reverse { flex-direction: row-reverse !important; }
         @media (max-width: 768px) {

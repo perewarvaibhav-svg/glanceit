@@ -70,6 +70,7 @@ export const HeroCard = () => (
       />
       {/* Dashboard metrics overlay */}
       <div
+        className="metric-grid"
         style={{
           position: "absolute",
           bottom: 24,
@@ -88,6 +89,7 @@ export const HeroCard = () => (
         ].map((m, i) => (
           <div
             key={i}
+            className="metric-card"
             style={{
               background: "rgba(255,255,255,0.92)",
               backdropFilter: "blur(12px)",
@@ -118,7 +120,7 @@ export const HeroCard = () => (
             <div
               style={{
                 color: C.textPrimary,
-                fontSize: "1.25rem",
+                fontSize: "1.15rem",
                 fontWeight: 800,
                 fontFamily: "Syne, sans-serif",
                 lineHeight: 1.1,
