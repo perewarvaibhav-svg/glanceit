@@ -31,9 +31,9 @@ export const Footer = () => (
         >
           <defs>
             <linearGradient id="gBrandGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#ff4d66" />
-              <stop offset="30%" stopColor="#ff1938" />
-              <stop offset="100%" stopColor="#b3001b" />
+              <stop offset="0%" stopColor="#ff2a85" />
+              <stop offset="50%" stopColor="#d92bb8" />
+              <stop offset="100%" stopColor="#b535f6" />
             </linearGradient>
           </defs>
           <path

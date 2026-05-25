@@ -35,28 +35,41 @@ export default function LandingPage() {
       <main>
         <Hero />
         <LogoCloud />
-        <Features />
+        
+        <section id="platform">
+          <Features />
+        </section>
+
         <FullWidthImage
           src="/content-dashboard.png"
           alt="AI City Map Dashboard"
           height={480}
         />
-        <ContentSplit
-          badge="Real-time AI"
-          title="Turn everyday camera feeds into measurable business value."
-          subtitle="Because critical insights are hidden in plain sight, and businesses shouldn't miss them. We understand what your cameras see."
-          points={[
-            "Eliminate blind spots in physical environments",
-            "Replace reactive monitoring with proactive intelligence",
-            "Instant smart alerts",
-            "Actionable KPI extraction from video",
-          ]}
-          image="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=900"
-          reverse={false}
-        />
-        <Pricing />
-        <Testimonial />
-        <Steps />
+        
+        <section id="solutions">
+          <ContentSplit
+            badge="Real-time AI"
+            title="Turn everyday camera feeds into measurable business value."
+            subtitle="Because critical insights are hidden in plain sight, and businesses shouldn't miss them. We understand what your cameras see."
+            points={[
+              "Eliminate blind spots in physical environments",
+              "Replace reactive monitoring with proactive intelligence",
+              "Instant smart alerts",
+              "Actionable KPI extraction from video",
+            ]}
+            image="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=900"
+            reverse={false}
+          />
+        </section>
+
+        <section id="pricing">
+          <Pricing />
+        </section>
+
+        <section id="resources">
+          <Testimonial />
+          <Steps />
+        </section>
         <FullWidthImage
           src="/footer-dashboard.png"
           alt="Security Control Room"

@@ -50,9 +50,9 @@ export const Navbar = () => {
           >
             <defs>
               <linearGradient id="gBrandGradNav" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff4d66" />
-                <stop offset="30%" stopColor="#ff1938" />
-                <stop offset="100%" stopColor="#b3001b" />
+                <stop offset="0%" stopColor="#ff2a85" />
+                <stop offset="50%" stopColor="#d92bb8" />
+                <stop offset="100%" stopColor="#b535f6" />
               </linearGradient>
             </defs>
             <path
@@ -84,7 +84,7 @@ export const Navbar = () => {
           {["Platform", "Solutions", "Pricing", "Resources"].map((l) => (
             <a
               key={l}
-              href="#"
+              href={`#${l.toLowerCase()}`}
               style={{
                 color: C.textSecondary,
                 textDecoration: "none",
@@ -104,24 +104,8 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA (Menu toggle for mobile only) */}
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <button
-            style={{
-              background: "none",
-              border: "none",
-              color: C.textSecondary,
-              fontWeight: 500,
-              fontSize: "0.875rem",
-              cursor: "pointer",
-            }}
-            className="hidden md:block"
-          >
-            Login
-          </button>
-          <PrimaryBtn style={{ padding: "10px 24px", fontSize: "0.85rem" }}>
-            Get Started
-          </PrimaryBtn>
           <button
             className="md:hidden"
             onClick={() => setOpen(!open)}
@@ -146,11 +130,12 @@ export const Navbar = () => {
             padding: "20px 24px 28px",
           }}
         >
-          {["Platform", "Solutions", "Pricing", "Resources", "Login"].map(
+          {["Platform", "Solutions", "Pricing", "Resources"].map(
             (l) => (
               <a
                 key={l}
-                href="#"
+                href={`#${l.toLowerCase()}`}
+                onClick={() => setOpen(false)}
                 style={{
                   display: "block",
                   color: C.textSecondary,
@@ -164,11 +149,6 @@ export const Navbar = () => {
               </a>
             ),
           )}
-          <PrimaryBtn
-            style={{ marginTop: 20, width: "100%", display: "block" }}
-          >
-            Get Started
-          </PrimaryBtn>
         </div>
       )}
     </nav>
