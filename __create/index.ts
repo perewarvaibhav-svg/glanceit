@@ -11,7 +11,7 @@ import { cors } from 'hono/cors';
 import { proxy } from 'hono/proxy';
 import { bodyLimit } from 'hono/body-limit';
 import { requestId } from 'hono/request-id';
-import { createHonoServer } from 'react-router-hono-server/node';
+import { createRequestHandler } from 'react-router';
 import { serializeError } from 'serialize-error';
 import ws from 'ws';
 import NeonAdapter from './adapter';
@@ -35,9 +35,19 @@ for (const method of ['log', 'info', 'warn', 'error', 'debug'] as const) {
   };
 }
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+let _pool: Pool | null = null;
+const pool = {
+  query: async (...args: any[]) => {
+    if (!_pool) {
+      _pool = new Pool({
+        connectionString: process.env.DATABASE_URL,
+      });
+    }
+    // @ts-expect-error - lazy proxy
+    return _pool.query(...args);
+  },
+} as unknown as Pool;
+
 const adapter = NeonAdapter(pool);
 
 const app = new Hono();
@@ -293,7 +303,10 @@ app.use('/api/auth/*', async (c, next) => {
 });
 app.route(API_BASENAME, api);
 
-export default await createHonoServer({
-  app,
-  defaultLogger: false,
-});
+// Export the Hono app's fetch handler.
+// This is Web-fetch-API compatible and works with Vercel serverless.
+// Unlike createHonoServer (which calls serve() and starts an HTTP server
+// that never exits during build), this just exports the handler.
+export default {
+  fetch: app.fetch.bind(app),
+};
