@@ -48,8 +48,8 @@ export const Footer = () => (
           style={{
             color: C.textPrimary,
             fontWeight: 800,
-            fontFamily: "Syne, sans-serif",
-            letterSpacing: "0.05em",
+            fontFamily: "'Outfit', sans-serif",
+            letterSpacing: "-0.02em",
             fontSize: "0.95rem",
           }}
         >

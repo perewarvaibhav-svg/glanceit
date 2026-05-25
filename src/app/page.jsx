@@ -23,9 +23,9 @@ const FullWidthImage = ({ src, alt, height = 500 }) => (
 
 export default function LandingPage() {
   return (
-    <div
+      <div
       style={{
-        fontFamily: "Inter, system-ui, sans-serif",
+        fontFamily: "'Outfit', system-ui, sans-serif",
         background: C.bg0,
         color: C.textPrimary,
         minHeight: "100vh",
@@ -79,7 +79,7 @@ export default function LandingPage() {
       </main>
       <Footer />
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #FAF8F4; }
         html { scroll-behavior: smooth; }
@@ -140,6 +140,11 @@ export default function LandingPage() {
         @media (min-width: 769px) {
           .hidden.md\\:flex { display: flex !important; }
           .hidden.md\\:block { display: block !important; }
+        }
+        
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </div>

@@ -73,15 +73,17 @@ export const Hero = () => (
       </span>
 
       <h1
-        className="hero-title"
+        className="hero-title fade-up"
         style={{
-          fontFamily: "Syne, sans-serif",
+          fontFamily: "'Outfit', sans-serif",
           fontSize: "clamp(3rem, 7vw, 6.5rem)",
           fontWeight: 800,
           lineHeight: 0.95,
           margin: "0 0 40px",
-          letterSpacing: "-0.03em",
+          letterSpacing: "-0.04em",
           textAlign: "center",
+          animation: "fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+          opacity: 0,
         }}
       >
         <span style={{ color: C.textPrimary, display: "block" }}>Know what's happening.</span>

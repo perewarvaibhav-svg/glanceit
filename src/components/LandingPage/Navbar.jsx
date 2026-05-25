@@ -68,8 +68,8 @@ export const Navbar = () => {
               color: C.textPrimary,
               fontWeight: 800,
               fontSize: "1.1rem",
-              fontFamily: "Syne, sans-serif",
-              letterSpacing: "0.05em",
+              fontFamily: "'Outfit', sans-serif",
+              letterSpacing: "-0.02em",
             }}
           >
             GLANCEIT
@@ -79,7 +79,13 @@ export const Navbar = () => {
         {/* Desktop links */}
         <div
           className="hidden md:flex"
-          style={{ gap: 36, alignItems: "center" }}
+          style={{ 
+            gap: 36, 
+            alignItems: "center",
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)"
+          }}
         >
           {["Platform", "Solutions", "Pricing", "Resources"].map((l) => (
             <a
@@ -90,14 +96,15 @@ export const Navbar = () => {
                 textDecoration: "none",
                 fontSize: "0.875rem",
                 fontWeight: 500,
-                transition: "color 0.2s",
+                fontFamily: "'Outfit', sans-serif",
+                transition: "color 0.2s, transform 0.2s",
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.color = C.textPrimary)
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.color = C.textSecondary)
-              }
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = C.textPrimary;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = C.textSecondary;
+              }}
             >
               {l}
             </a>
