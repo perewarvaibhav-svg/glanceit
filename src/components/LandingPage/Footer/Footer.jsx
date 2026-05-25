@@ -21,28 +21,11 @@ export const Footer = () => (
     >
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <div
-          style={{
-            width: 28,
-            height: 28,
-            borderRadius: 7,
-            background: C.coral,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <span
-            style={{
-              color: "#fff",
-              fontWeight: 900,
-              fontSize: "0.85rem",
-              fontFamily: "Syne, sans-serif",
-            }}
-          >
-            G
-          </span>
-        </div>
+        <img
+          src="/logo.svg"
+          alt="GlanceIt Logo"
+          style={{ width: 32, height: 32, display: "block", flexShrink: 0 }}
+        />
         <span
           style={{
             color: C.textPrimary,

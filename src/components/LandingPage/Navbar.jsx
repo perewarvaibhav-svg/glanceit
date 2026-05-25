@@ -21,7 +21,7 @@ export const Navbar = () => {
           left: 0,
           right: 0,
           zIndex: 100,
-          background: scrolled ? "rgba(59,130,246,0.92)" : "transparent",
+          background: scrolled ? "rgba(9, 9, 11, 0.90)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled ? `1px solid ${C.border}` : "none",
           transition: "all 0.3s",
@@ -40,28 +40,11 @@ export const Navbar = () => {
       >
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div
-            style={{
-              width: 32,
-              height: 32,
-              borderRadius: 8,
-              background: C.coral,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <span
-              style={{
-                color: "#fff",
-                fontWeight: 900,
-                fontSize: "1rem",
-                fontFamily: "Syne, sans-serif",
-              }}
-            >
-              G
-            </span>
-          </div>
+          <img
+            src="/logo.svg"
+            alt="GlanceIt Logo"
+            style={{ width: 38, height: 38, display: "block", flexShrink: 0 }}
+          />
           <span
             style={{
               color: C.textPrimary,
