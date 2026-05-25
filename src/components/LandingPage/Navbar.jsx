@@ -39,7 +39,10 @@ export const Navbar = () => {
         }}
       >
         {/* Logo */}
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <a
+          href="https://glanceit.ai/"
+          style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
+        >
           <svg
             width="38"
             height="38"
@@ -74,7 +77,7 @@ export const Navbar = () => {
           >
             GLANCEIT
           </span>
-        </div>
+        </a>
 
         {/* Desktop links */}
         <div

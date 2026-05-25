@@ -22,8 +22,8 @@ export const Hero = () => (
     <div
       style={{
         position: "absolute",
-        top: "15%",
-        left: "5%",
+        top: "-10%",
+        left: "0%",
         width: "50vw",
         height: "50vw",
         maxWidth: 650,
@@ -39,7 +39,7 @@ export const Hero = () => (
     <div
       style={{
         position: "absolute",
-        top: "25%",
+        top: "-5%",
         right: "-5%",
         width: "55vw",
         height: "55vw",
@@ -56,8 +56,8 @@ export const Hero = () => (
     <div
       style={{
         position: "absolute",
-        bottom: "10%",
-        left: "30%",
+        top: "10%",
+        left: "25%",
         width: "35vw",
         height: "35vw",
         maxWidth: 450,
