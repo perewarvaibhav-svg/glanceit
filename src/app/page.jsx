@@ -146,6 +146,20 @@ export default function LandingPage() {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        
+        @keyframes float1 {
+          0% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(50px, -50px) scale(1.1); }
+          66% { transform: translate(-30px, 30px) scale(0.9); }
+          100% { transform: translate(0, 0) scale(1); }
+        }
+
+        @keyframes float2 {
+          0% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(-50px, 40px) scale(0.9); }
+          66% { transform: translate(40px, -40px) scale(1.1); }
+          100% { transform: translate(0, 0) scale(1); }
+        }
       `}</style>
     </div>
   );

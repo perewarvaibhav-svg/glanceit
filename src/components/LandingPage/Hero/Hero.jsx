@@ -18,30 +18,39 @@ export const Hero = () => (
       overflow: "hidden",
     }}
   >
+    {/* Translucent Liquid Movement Background Orbs */}
     <div
       style={{
         position: "absolute",
-        top: "18%",
-        left: "8%",
-        width: 380,
-        height: 380,
+        top: "15%",
+        left: "5%",
+        width: "45vw",
+        height: "45vw",
+        maxWidth: 600,
+        maxHeight: 600,
         borderRadius: "50%",
-        background:
-          "radial-gradient(circle, rgba(82,107,70,0.06) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(255, 42, 133, 0.12) 0%, transparent 70%)",
+        filter: "blur(60px)",
         pointerEvents: "none",
+        animation: "float1 15s ease-in-out infinite",
+        zIndex: 0,
       }}
     />
     <div
       style={{
         position: "absolute",
-        top: "25%",
-        right: "6%",
-        width: 320,
-        height: 320,
+        top: "30%",
+        right: "0%",
+        width: "50vw",
+        height: "50vw",
+        maxWidth: 700,
+        maxHeight: 700,
         borderRadius: "50%",
-        background:
-          "radial-gradient(circle, rgba(201,169,110,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(181, 53, 246, 0.12) 0%, transparent 70%)",
+        filter: "blur(60px)",
         pointerEvents: "none",
+        animation: "float2 18s ease-in-out infinite",
+        zIndex: 0,
       }}
     />
 
