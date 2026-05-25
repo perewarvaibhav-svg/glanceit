@@ -147,12 +147,13 @@ export const Pricing = () => (
             <div
               key={t.name}
               style={{
-                padding: "28px 24px",
+                padding: "28px 16px",
                 borderLeft: `1px solid ${C.border}`,
                 background: t.highlight
                   ? "rgba(82,107,70,0.05)"
                   : "transparent",
                 position: "relative",
+                textAlign: "center",
               }}
             >
               {t.highlight && (
@@ -215,11 +216,13 @@ export const Pricing = () => (
               <div
                 key={j}
                 style={{
-                  padding: "18px 24px",
+                  padding: "18px 12px",
                   borderLeft: `1px solid ${C.border}`,
                   background: j === 1 ? "rgba(82,107,70,0.04)" : "transparent",
                   display: "flex",
                   alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
                 }}
               >
                 {val === true ? (
@@ -230,7 +233,7 @@ export const Pricing = () => (
                     style={{ color: C.textMuted, opacity: 0.4 }}
                   />
                 ) : (
-                  <span style={{ color: C.textSecondary, fontSize: "0.88rem" }}>
+                  <span style={{ color: C.textSecondary, fontSize: "0.88rem", whiteSpace: "nowrap" }}>
                     {val}
                   </span>
                 )}
