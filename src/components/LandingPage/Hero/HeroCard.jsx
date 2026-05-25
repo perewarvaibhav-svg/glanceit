@@ -65,7 +65,7 @@ export const HeroCard = () => (
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(to bottom, rgba(248,249,250,0.0) 30%, rgba(248,249,250,0.70) 100%)",
+            "linear-gradient(to bottom, rgba(18,18,26,0.0) 40%, rgba(18,18,26,0.85) 100%)",
         }}
       />
       {/* Dashboard metrics overlay */}
@@ -91,11 +91,11 @@ export const HeroCard = () => (
             key={i}
             className="metric-card"
             style={{
-              background: "rgba(255,255,255,0.92)",
+              background: "rgba(11,11,18,0.82)",
               backdropFilter: "blur(12px)",
               WebkitBackdropFilter: "blur(12px)",
               borderRadius: 12,
-              border: `1px solid rgba(33,37,41,0.10)`,
+              border: `1px solid ${C.border}`,
               padding: "14px 16px",
               display: "flex",
               flexDirection: "column",
