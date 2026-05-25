@@ -38,7 +38,7 @@ export const LogoCloud = () => (
             key={n}
             style={{
               color: C.textPrimary,
-              fontFamily: "Syne, sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontWeight: 700,
               fontSize: "1.05rem",
               letterSpacing: "0.04em",

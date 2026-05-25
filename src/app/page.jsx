@@ -81,8 +81,8 @@ export default function LandingPage() {
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: #FAF8F4; }
-        html { scroll-behavior: smooth; }
+        body { background: #FAF8F4; overflow-x: hidden; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
         
         /* Mobile vs Desktop Display Utilities */
         @media (max-width: 768px) {
@@ -96,7 +96,11 @@ export default function LandingPage() {
           /* Hero mobile overrides */
           .hero-title {
             line-height: 1.15 !important;
-            font-size: 2.8rem !important;
+            font-size: 2.2rem !important;
+          }
+          .mobile-stack > button {
+            width: 100% !important;
+            justify-content: center !important;
           }
           
           /* Metric Cards responsive overlay */

@@ -45,7 +45,7 @@ export const ContentSplit = ({
         </span>
         <h2
           style={{
-            fontFamily: "Syne, sans-serif",
+            fontFamily: "'Outfit', sans-serif",
             fontSize: "clamp(2.2rem, 4vw, 3.2rem)",
             fontWeight: 800,
             color: C.textPrimary,

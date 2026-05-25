@@ -122,7 +122,7 @@ export const HeroCard = () => (
                 color: C.textPrimary,
                 fontSize: "1.15rem",
                 fontWeight: 800,
-                fontFamily: "Syne, sans-serif",
+                fontFamily: "'Outfit', sans-serif",
                 lineHeight: 1.1,
               }}
             >

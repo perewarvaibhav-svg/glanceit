@@ -60,7 +60,7 @@ export const Pricing = () => (
           </span>
           <h2
             style={{
-              fontFamily: "Syne, sans-serif",
+              fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(2.2rem, 5vw, 3.8rem)",
               fontWeight: 800,
               color: C.textPrimary,
@@ -169,7 +169,7 @@ export const Pricing = () => (
               )}
               <div
                 style={{
-                  fontFamily: "Syne, sans-serif",
+                  fontFamily: "'Outfit', sans-serif",
                   fontWeight: 800,
                   fontSize: "1.1rem",
                   color: C.textPrimary,

@@ -19,7 +19,7 @@ export const FeatureCard = ({ icon, title, desc }) => (
     <h3
       style={{
         color: C.textPrimary,
-        fontFamily: "Syne, sans-serif",
+        fontFamily: "'Outfit', sans-serif",
         fontWeight: 700,
         fontSize: "1rem",
         margin: 0,

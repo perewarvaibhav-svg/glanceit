@@ -63,7 +63,7 @@ export const Testimonial = () => (
 
         <blockquote
           style={{
-            fontFamily: "Syne, sans-serif",
+            fontFamily: "'Outfit', sans-serif",
             fontSize: "clamp(1.5rem, 3vw, 2.1rem)",
             fontWeight: 700,
             color: C.textPrimary,
