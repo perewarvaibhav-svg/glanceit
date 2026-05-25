@@ -70,7 +70,7 @@ export const PricingCard = ({ tier }) => (
     </div>
     <div
       style={{
-        fontFamily: 'Outfit', sans-serif,
+        fontFamily: "'Outfit', sans-serif",
         fontSize: "3rem",
         fontWeight: 800,
         color: C.textPrimary,
