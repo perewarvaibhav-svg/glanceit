@@ -40,10 +40,21 @@ export const Navbar = () => {
       >
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <img
-            src="/logo.svg"
-            alt="GlanceIt Logo"
-            style={{ width: 38, height: 38, display: "block", flexShrink: 0 }}
+          <div
+            style={{
+              width: 44,
+              height: 44,
+              background: GRAD.primary,
+              WebkitMaskImage: 'url(/logo.png)',
+              WebkitMaskSize: 'contain',
+              WebkitMaskRepeat: 'no-repeat',
+              WebkitMaskPosition: 'center',
+              maskImage: 'url(/logo.png)',
+              maskSize: 'contain',
+              maskRepeat: 'no-repeat',
+              maskPosition: 'center',
+              flexShrink: 0,
+            }}
           />
           <span
             style={{
