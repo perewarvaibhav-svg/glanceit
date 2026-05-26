@@ -34,6 +34,25 @@ export function meta() {
 }
 
 export default function LandingPage() {
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GlanceIt",
+    "operatingSystem": "Web Browser",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "49.00",
+      "priceCurrency": "USD"
+    },
+    "description": "GlanceIt is the unified video intelligence platform for modern enterprises. Turn everyday camera feeds into measurable business value.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "84"
+    }
+  };
+
   return (
     <div
       style={{
@@ -43,6 +62,10 @@ export default function LandingPage() {
         minHeight: "100vh",
       }}
     >
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
       <Navbar />
       <main>
         <Hero />
