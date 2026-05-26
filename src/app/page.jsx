@@ -8,6 +8,7 @@ import { ContentSplit } from "@/components/LandingPage/ContentSplit";
 import { Pricing } from "@/components/LandingPage/Pricing/Pricing";
 import { Testimonial } from "@/components/LandingPage/Testimonial";
 import { Steps } from "@/components/LandingPage/Steps/Steps";
+import { FAQ } from "@/components/LandingPage/FAQ/FAQ";
 import { FooterCTA } from "@/components/LandingPage/FooterCTA";
 import { Footer } from "@/components/LandingPage/Footer/Footer";
 
@@ -104,6 +105,10 @@ export default function LandingPage() {
         <section id="resources">
           <Testimonial />
           <Steps />
+        </section>
+
+        <section id="faq">
+          <FAQ />
         </section>
 
         <FullWidthImage
