@@ -115,19 +115,22 @@ export const Hero = () => (
         <span style={{ color: C.textPrimary, display: "block" }}>Know what's happening.</span>
         <span style={{ color: C.coral, display: "block" }}>The moment it matters.</span>
       </h1>
-
+      
       <p
+        className="fade-up"
         style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: "clamp(1.1rem, 2vw, 1.25rem)",
           color: C.textSecondary,
-          fontSize: "clamp(0.95rem, 1.8vw, 1.1rem)",
-          lineHeight: 1.8,
           maxWidth: 600,
-          margin: "0 auto 44px",
+          margin: "0 auto 40px",
+          lineHeight: 1.6,
+          animationDelay: "0.1s",
+          fontWeight: 400,
           textAlign: "center",
         }}
       >
-        The unified video intelligence platform for modern enterprises. One place to
-        connect your cameras, extract actionable KPIs, and eliminate blind spots.
+        AI Video Analytics that transform everyday camera feeds into Actionable Insights. Detect risks, optimize performance, and ensure safety across your enterprise in real time.
       </p>
 
       <div

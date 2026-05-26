@@ -26,11 +26,11 @@ const FullWidthImage = ({ src, alt, height = 500 }) => (
 
 export function meta() {
   return [
-    { title: "GlanceIt | AI Video Intelligence Platform" },
-    { name: "description", content: "GlanceIt is the unified video intelligence platform for modern enterprises. Turn everyday camera feeds into measurable business value and eliminate blind spots." },
+    { title: "GlanceIt | AI Video Analytics Platform" },
+    { name: "description", content: "AI-powered video analytics that transform everyday camera feeds into actionable insights. Detect risks, optimize performance, and ensure safety across your enterprise in real time." },
     { tagName: "link", rel: "canonical", href: "https://glanceit.vercel.app/" },
-    { property: "og:title", content: "GlanceIt | AI Video Intelligence Platform" },
-    { property: "og:description", content: "The unified video intelligence platform for modern enterprises. Connect your cameras, extract actionable KPIs, and eliminate blind spots." },
+    { property: "og:title", content: "GlanceIt | AI Video Analytics Platform" },
+    { property: "og:description", content: "AI-powered video analytics that transform everyday camera feeds into actionable insights. Detect risks, optimize performance, and ensure safety in real time." },
     { property: "og:image", content: "https://glanceit.vercel.app/hero-dashboard.png" },
     { property: "og:url", content: "https://glanceit.vercel.app" },
     { name: "twitter:card", content: "summary_large_image" }
