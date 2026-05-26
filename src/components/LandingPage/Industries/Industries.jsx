@@ -1,41 +1,42 @@
 import { C, GRAD } from "@/constants/designTokens";
+import { Store, Factory, Truck, Activity, Building2, HardHat } from "lucide-react";
 
 const industries = [
   {
-    icon: "🏪",
-    title: "Retail",
-    description: "Track foot traffic, prevent theft, measure queue lengths, and optimize store layouts using live camera intelligence.",
-    tags: ["Foot Traffic", "Loss Prevention", "Queue Analytics"],
+    icon: <Store size={32} color={C.coral} />,
+    title: "Retail Intelligence",
+    description: "Transform physical stores with precise foot traffic analysis, queue management, and automated loss prevention protocols.",
+    tags: ["Customer Flow", "Loss Prevention", "Queue Analytics"],
   },
   {
-    icon: "🏭",
+    icon: <Factory size={32} color={C.coral} />,
     title: "Manufacturing",
-    description: "Monitor production lines for safety violations, equipment anomalies, and operational bottlenecks in real time.",
-    tags: ["Safety Compliance", "PPE Detection", "Line Efficiency"],
+    description: "Enforce strict safety protocols, detect equipment anomalies, and monitor production line efficiency with zero latency.",
+    tags: ["Safety Compliance", "Quality Assurance", "Line Efficiency"],
   },
   {
-    icon: "🚚",
-    title: "Logistics & Warehouses",
-    description: "Automate vehicle tracking, dock monitoring, and inventory movement analysis across large facilities.",
-    tags: ["Vehicle Tracking", "Dock Management", "Inventory Flow"],
+    icon: <Truck size={32} color={C.coral} />,
+    title: "Logistics & Warehousing",
+    description: "Automate dock management, track fleet vehicles, and optimize inventory movement across complex supply chains.",
+    tags: ["Fleet Tracking", "Dock Management", "Inventory Flow"],
   },
   {
-    icon: "🏥",
-    title: "Healthcare",
-    description: "Ensure patient safety, monitor restricted zones, and maintain hygiene compliance without manual oversight.",
-    tags: ["Patient Safety", "Zone Monitoring", "Compliance"],
+    icon: <Activity size={32} color={C.coral} />,
+    title: "Healthcare Facilities",
+    description: "Ensure patient privacy while monitoring restricted zones, fall detection, and operational hygiene compliance.",
+    tags: ["Patient Safety", "Zone Monitoring", "Compliance Audits"],
   },
   {
-    icon: "🏢",
-    title: "Corporate Offices",
-    description: "Manage access control, detect tailgating, and track space utilization across your entire office footprint.",
-    tags: ["Access Control", "Space Utilization", "Security"],
+    icon: <Building2 size={32} color={C.coral} />,
+    title: "Corporate Campuses",
+    description: "Deploy advanced access control, prevent unauthorized tailgating, and intelligently map space utilization metrics.",
+    tags: ["Access Control", "Space Utilization", "Asset Protection"],
   },
   {
-    icon: "🏗️",
+    icon: <HardHat size={32} color={C.coral} />,
     title: "Construction Sites",
-    description: "Enforce hardhat and safety vest compliance, monitor site perimeter, and track worker attendance automatically.",
-    tags: ["PPE Compliance", "Perimeter Security", "Worker Safety"],
+    description: "Automatically verify PPE compliance, secure site perimeters, and mitigate liability risks through continuous monitoring.",
+    tags: ["PPE Verification", "Perimeter Security", "Risk Mitigation"],
   },
 ];
 
