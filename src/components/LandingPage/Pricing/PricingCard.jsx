@@ -57,7 +57,7 @@ export const PricingCard = ({ tier }) => (
     <div style={{ marginBottom: 8 }}>
       <h3
         style={{
-          fontFamily: "'Outfit', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           color: C.textPrimary,
           fontWeight: 800,
           fontSize: "1.2rem",
@@ -70,7 +70,7 @@ export const PricingCard = ({ tier }) => (
     </div>
     <div
       style={{
-        fontFamily: "'Outfit', sans-serif",
+        fontFamily: "'Inter', sans-serif",
         fontSize: "3rem",
         fontWeight: 800,
         color: C.textPrimary,

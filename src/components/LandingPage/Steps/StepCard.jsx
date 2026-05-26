@@ -12,7 +12,7 @@ export const StepCard = ({ num, title, desc }) => (
   >
     <div
       style={{
-        fontFamily: "'Outfit', sans-serif",
+        fontFamily: "'Inter', sans-serif",
         fontSize: "4.5rem",
         fontWeight: 900,
         color: C.olive,
@@ -26,7 +26,7 @@ export const StepCard = ({ num, title, desc }) => (
     </div>
     <h3
       style={{
-        fontFamily: "'Outfit', sans-serif",
+        fontFamily: "'Inter', sans-serif",
         color: C.textPrimary,
         fontWeight: 800,
         fontSize: "1.15rem",

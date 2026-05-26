@@ -71,7 +71,7 @@ export const Navbar = () => {
               color: C.textPrimary,
               fontWeight: 800,
               fontSize: "1.1rem",
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               letterSpacing: "-0.02em",
             }}
           >
@@ -99,7 +99,7 @@ export const Navbar = () => {
                 textDecoration: "none",
                 fontSize: "0.875rem",
                 fontWeight: l === "Waitlist" ? 700 : 500,
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => {

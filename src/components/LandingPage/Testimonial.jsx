@@ -51,7 +51,7 @@ export const Testimonial = () => (
         </span>
         <h2
           style={{
-            fontFamily: "'Outfit', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 700,
             color: C.textPrimary,

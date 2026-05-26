@@ -34,7 +34,7 @@ export const Features = () => (
         </span>
         <h2
           style={{
-            fontFamily: "'Outfit', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(2.2rem, 5vw, 3.8rem)",
             fontWeight: 800,
             color: C.textPrimary,

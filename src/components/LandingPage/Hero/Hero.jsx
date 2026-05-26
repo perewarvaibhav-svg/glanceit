@@ -101,7 +101,7 @@ export const Hero = () => (
       <h1
         className="hero-title fade-up"
         style={{
-          fontFamily: "'Outfit', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           fontSize: "clamp(3rem, 7vw, 6.5rem)",
           fontWeight: 800,
           lineHeight: 0.95,

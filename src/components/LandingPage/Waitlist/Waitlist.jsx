@@ -101,7 +101,7 @@ export const Waitlist = () => {
           </span>
           <h2
             style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: "clamp(2rem, 4vw, 3.2rem)",
               fontWeight: 800,
               color: C.textPrimary,
@@ -168,7 +168,7 @@ export const Waitlist = () => {
               <div style={{ fontSize: "3rem", marginBottom: 16 }}>🎉</div>
               <h3
                 style={{
-                  fontFamily: "'Outfit', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: "1.5rem",
                   fontWeight: 700,
                   color: C.textPrimary,
@@ -185,7 +185,7 @@ export const Waitlist = () => {
             <form onSubmit={handleSubmit}>
               <h3
                 style={{
-                  fontFamily: "'Outfit', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: "1.4rem",
                   fontWeight: 700,
                   color: C.textPrimary,
@@ -231,7 +231,7 @@ export const Waitlist = () => {
                       fontSize: "0.95rem",
                       outline: "none",
                       boxSizing: "border-box",
-                      fontFamily: "'Outfit', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                       transition: "border-color 0.2s",
                     }}
                     onFocus={(e) => (e.target.style.borderColor = "rgba(255,42,133,0.5)")}
@@ -252,7 +252,7 @@ export const Waitlist = () => {
                   color: "#fff",
                   fontSize: "1rem",
                   fontWeight: 700,
-                  fontFamily: "'Outfit', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   cursor: loading ? "wait" : "pointer",
                   display: "flex",
                   alignItems: "center",

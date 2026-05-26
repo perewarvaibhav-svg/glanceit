@@ -60,7 +60,7 @@ export default function LandingPage() {
   return (
     <div
       style={{
-        fontFamily: "'Outfit', system-ui, sans-serif",
+        fontFamily: "'Inter', system-ui, sans-serif",
         background: C.bg0,
         color: C.textPrimary,
         minHeight: "100vh",

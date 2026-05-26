@@ -92,7 +92,7 @@ export const Industries = () => (
         <h2
           className="fade-up"
           style={{
-            fontFamily: "'Outfit', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 700,
             color: C.textPrimary,
@@ -154,7 +154,7 @@ export const Industries = () => (
             <div style={{ fontSize: "2.5rem", marginBottom: 16 }}>{industry.icon}</div>
             <h3
               style={{
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 fontSize: "1.25rem",
                 fontWeight: 700,
                 color: C.textPrimary,

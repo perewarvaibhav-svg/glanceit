@@ -30,7 +30,7 @@ export const Stats = () => (
         <div key={i}>
           <div
             style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: "2.6rem",
               fontWeight: 800,
               background: GRAD.text,

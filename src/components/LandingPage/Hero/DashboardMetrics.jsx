@@ -43,7 +43,7 @@ export const DashboardMetrics = () => (
             color: C.textPrimary,
             fontSize: "1.5rem",
             fontWeight: 800,
-            fontFamily: "'Outfit', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             marginBottom: 6,
           }}
         >

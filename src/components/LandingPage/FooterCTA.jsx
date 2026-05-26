@@ -49,7 +49,7 @@ export const FooterCTA = () => (
 
       <h2
         style={{
-          fontFamily: "'Outfit', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           fontSize: "clamp(3rem, 7vw, 5.5rem)",
           fontWeight: 800,
           color: C.textPrimary,
@@ -62,7 +62,7 @@ export const FooterCTA = () => (
       </h2>
       <h2
         style={{
-          fontFamily: "'Outfit', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           fontSize: "clamp(3rem, 7vw, 5.5rem)",
           fontWeight: 800,
           color: C.coral,
