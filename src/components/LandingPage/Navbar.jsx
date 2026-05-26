@@ -40,7 +40,7 @@ export const Navbar = () => {
       >
         {/* Logo */}
         <a
-          href="https://glanceit.ai/"
+          href="/"
           style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
         >
           <svg
@@ -90,23 +90,23 @@ export const Navbar = () => {
             transform: "translateX(-50%)"
           }}
         >
-          {["Platform", "Solutions", "Pricing", "Resources"].map((l) => (
+          {["Platform", "Industries", "Solutions", "Pricing", "Waitlist"].map((l) => (
             <a
               key={l}
               href={`#${l.toLowerCase()}`}
               style={{
-                color: C.textSecondary,
+                color: l === "Waitlist" ? C.coral : C.textSecondary,
                 textDecoration: "none",
                 fontSize: "0.875rem",
-                fontWeight: 500,
+                fontWeight: l === "Waitlist" ? 700 : 500,
                 fontFamily: "'Outfit', sans-serif",
-                transition: "color 0.2s, transform 0.2s",
+                transition: "color 0.2s",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = C.textPrimary;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = C.textSecondary;
+                e.currentTarget.style.color = l === "Waitlist" ? C.coral : C.textSecondary;
               }}
             >
               {l}
@@ -140,7 +140,7 @@ export const Navbar = () => {
             padding: "20px 24px 28px",
           }}
         >
-          {["Platform", "Solutions", "Pricing", "Resources"].map(
+          {["Platform", "Industries", "Solutions", "Pricing", "Waitlist"].map(
             (l) => (
               <a
                 key={l}
@@ -148,10 +148,11 @@ export const Navbar = () => {
                 onClick={() => setOpen(false)}
                 style={{
                   display: "block",
-                  color: C.textSecondary,
+                  color: l === "Waitlist" ? C.coral : C.textSecondary,
                   textDecoration: "none",
                   padding: "12px 0",
                   fontSize: "1rem",
+                  fontWeight: l === "Waitlist" ? 700 : 400,
                   borderBottom: `1px solid ${C.border}`,
                 }}
               >
