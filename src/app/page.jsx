@@ -9,6 +9,8 @@ import { Pricing } from "@/components/LandingPage/Pricing/Pricing";
 import { Testimonial } from "@/components/LandingPage/Testimonial";
 import { Steps } from "@/components/LandingPage/Steps/Steps";
 import { FAQ } from "@/components/LandingPage/FAQ/FAQ";
+import { Industries } from "@/components/LandingPage/Industries/Industries";
+import { Waitlist } from "@/components/LandingPage/Waitlist/Waitlist";
 import { FooterCTA } from "@/components/LandingPage/FooterCTA";
 import { Footer } from "@/components/LandingPage/Footer/Footer";
 
@@ -98,6 +100,10 @@ export default function LandingPage() {
           />
         </section>
 
+        <section id="industries">
+          <Industries />
+        </section>
+
         <section id="pricing">
           <Pricing />
         </section>
@@ -109,6 +115,10 @@ export default function LandingPage() {
 
         <section id="faq">
           <FAQ />
+        </section>
+
+        <section id="waitlist">
+          <Waitlist />
         </section>
 
         <FullWidthImage

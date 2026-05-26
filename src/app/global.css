@@ -57,6 +57,12 @@ body {
   .metric-card {
     padding: 8px 10px !important;
   }
+
+  /* Waitlist section stacks on mobile */
+  .waitlist-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
