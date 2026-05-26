@@ -28,6 +28,7 @@ export function meta() {
   return [
     { title: "GlanceIt | AI Video Intelligence Platform" },
     { name: "description", content: "GlanceIt is the unified video intelligence platform for modern enterprises. Turn everyday camera feeds into measurable business value and eliminate blind spots." },
+    { tagName: "link", rel: "canonical", href: "https://glanceit.vercel.app/" },
     { property: "og:title", content: "GlanceIt | AI Video Intelligence Platform" },
     { property: "og:description", content: "The unified video intelligence platform for modern enterprises. Connect your cameras, extract actionable KPIs, and eliminate blind spots." },
     { property: "og:image", content: "https://glanceit.vercel.app/hero-dashboard.png" },
